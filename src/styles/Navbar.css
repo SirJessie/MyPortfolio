@@ -1,0 +1,173 @@
+.header-wrapper{
+    background-color: var(--dark-blue-100);
+    color: var(--white-100);
+    width: 100%;
+    height: 100vh;
+    padding: 0 0 30px 0;
+}
+.navbar{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 100px 10px 100px;
+    background-color: var(--dark-blue-100);
+    z-index: 3;
+}
+.navbar .logo-name{
+    font-weight: 800;
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+    line-height: 30px;
+}
+.nav-items{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    height: 50px;
+    font-size: 0;
+}
+.nav-items .nav-item{
+    font-size: 15px;
+    text-transform: uppercase;
+    color: var(--white-100);
+    text-decoration: none;
+    list-style-type: none;
+    line-height: 50px;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 600;
+}
+.nav-items .animation{
+    position: absolute;
+    height: 3px;
+    bottom: 0;
+    left: -20px;
+    z-index: 0;
+    background-color: var(--cyan-100);
+    transition: all .5s ease 0s;
+    transform: skew(-20deg);
+}
+/* .nav-item:hover{
+    color: var(--dark-blue-100);
+    transition: all .5s ease;
+} */
+.nav-item:nth-child(1){
+    width: 90px;
+}
+.nav-items .start-about, .nav-item:nth-child(1):hover~.animation{
+    width: 90px;
+    left: 0;
+}
+.nav-item:nth-child(2){
+    width: 105px;
+}
+.nav-items .start-project, .nav-item:nth-child(2):hover~.animation{
+    width: 105px;
+    left: 90px;
+}
+.nav-item:nth-child(3){
+    width: 105px;
+}
+.nav-items .start-contact, .nav-item:nth-child(3):hover~.animation{
+    width: 105px;
+    left: 200px;
+}
+
+/* Responsive Nav */
+
+
+/* BURGER MENU */
+/* .navbar .menu-bar{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.navbar .menu-bar .bar{
+    background-color: var(--white-100);
+    width: 30px;
+    height: 5px;
+    border-radius: 2px;
+}
+.navbar .menu-bar .bar::before,
+.navbar .menu-bar .bar::after{
+    content: '';
+    position: absolute;
+    background-color: var(--white-100);
+    width: 30px;
+    height: 5px;
+    border-radius: 2px;
+}
+.navbar .menu-bar .bar::before{
+    transform: translateY(-10px);
+}
+.navbar .menu-bar .bar::after{
+    transform: translateY(10px);
+}*/
+.navbar .menu-bar,
+.navbar .menu-bar-items{
+    display: none;
+}
+
+/* HEADER BANNER */
+.header-banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.header-banner .banner-content{
+    overflow: hidden;
+    padding: 10px;
+}
+.header-banner .banner-content .greet-text{
+    width: 150px;
+    padding: 3px 10px;
+    background-color: var(--cyan-100);
+    color: var(--dark-blue-100);
+    font-size: 25px;
+    font-weight: 500;
+    border-radius: 5px;
+    text-align: center;
+    animation: ScaleGreet .5s 2s ease;
+}
+.header-banner .banner-content .greet-text:hover{
+    transform: scale(1.1);
+    transition: all .5s ease 0s;
+}
+@keyframes ScaleGreet {
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+.header-banner .banner-content .name-text{
+    position: relative;
+    margin-top: 10px;
+    font-size: 35px;
+    font-weight: 600;
+    animation: SlideLeftName 1.5s 0s ease;
+}
+@keyframes SlideLeftName{
+    from{
+        left: -420px;
+    }
+    to{
+        left: 0;
+    }
+}
+.header-banner .banner-content .career-text{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+}
