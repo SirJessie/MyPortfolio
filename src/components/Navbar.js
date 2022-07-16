@@ -1,12 +1,11 @@
-import React from "react";// eslint-disable-next-line
+import React from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
 
 // Styles
-import '../styles/index.css';
-import '../styles/Navbar.css';
+import '../styles/Navbar.scss';
 
 
-function Navbar(){
+function Navbar(ScrollValue){
     const scrollToTop = () => {
         scroll.scrollToTop(); 
     };
@@ -20,9 +19,36 @@ function Navbar(){
                 <i class="fa-solid fa-greater-than"></i>
               </div>
               <ul className='nav-items'>
-                <li class='nav-item'>about</li>
-                <li class='nav-item'>project</li>
-                <li class='nav-item'>contact</li>
+                <li class='nav-item'>
+                  <Link 
+                    to='about'
+                    spy={true}
+                    smooth={true}
+                    offset={50}
+                    duration={500}
+                  >about
+                  </Link>
+                </li>
+                <li class='nav-item'>
+                <Link 
+                    to='skills'
+                    spy={true}
+                    smooth={true}
+                    offset={50}
+                    duration={500}
+                  >skills
+                  </Link>
+                </li>
+                <li class='nav-item'>
+                  <Link 
+                    to='project'
+                    spy={true}
+                    smooth={true}
+                    offset={50}
+                    duration={500}
+                  >projects
+                  </Link>
+                </li>
                 <div className='animation'></div>
               </ul>
               <div className='menu-bar'>

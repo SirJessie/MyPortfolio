@@ -1,0 +1,63 @@
+{   
+    "skills":[
+        {
+            "id": 1,
+            "title": "HTML",
+            "img" : "/resources/images/HTML Logo.png" 
+        },
+        {
+            "id": 2,
+            "title": "CSS",
+            "img" : "/resources/images/CSS Logo.jpg" 
+        },{
+            "id": 3,
+            "title": "SASS",
+            "img" : "/resources/images/SASS Logo.png" 
+        },
+        {
+            "id": 4,
+            "title": "JS",
+            "img" : "/resources/images/JS Logo.png" 
+        },
+        {
+            "id": 5,
+            "title": "JQUERY",
+            "img" : "resources/images/JQUERY Logo.png" 
+        },
+        {
+            "id": 6,
+            "title": "VB.Net",
+            "img" : "resources/images/VB Logo.png" 
+        },
+        {
+            "id": 7,
+            "title": "C#",
+            "img" : "resources/images/CSharp Logo.png" 
+        },
+        {
+            "id": 8,
+            "title": "JAVA",
+            "img" : "resources/images/JAVA Logo.svg" 
+        },
+        {
+            "id": 9,
+            "title": "PHP",
+            "img" : "resources/images/PHP Logo.png" 
+        },
+        {
+            "id": 10,
+            "title": "BOOTSTRAP",
+            "img" : "resources/images/BOOTSTRAP Logo.png" 
+        }
+    ],
+    "projects": [
+        {
+            "id":1,
+            "name":"",
+            "img":"",
+            "link":"",
+            "github":"",
+            "tech": ["",""]
+        }
+    ]
+}

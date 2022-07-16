@@ -1,0 +1,163 @@
+// IMPORT STYLES
+@import 'index';
+
+// SECTION CONTAINER
+.section-container{
+    width: 100%;
+    min-height: 100vh;
+
+    section{
+        padding: 50px;
+
+        .section-title{
+            font-size: 30px;
+            font-weight: 800;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        .sub-title{
+            padding: 10px 0 0 0;
+            font-size: 20px;
+            font-weight: 800;
+        }
+        
+        // SECTION ABOUT
+        &.section-about{
+            .sub-title{
+                width: 160px;
+                padding-left: 0;
+            }
+
+            // PERSONAL INFO
+            .personal-wrapper{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 20px;
+
+                // CARD
+                .personal-card{
+                    display: flex;
+
+                    // CARD LEFT
+                    .card-left{
+                        padding: 0 30px 30px 30px;
+                        height: 400px;
+                        object-fit: cover;
+
+                        img{
+                            height: 100%;
+                            border-radius: 40%;
+                        }
+                    }
+
+                    // CARD RIGHT
+                    .card-right{
+                        width: 400px;
+                        padding: 30px;
+                        text-align: justify;
+                        position: relative;
+
+                        // DOWNLOAD BUTTOn
+                        a{
+                            position: absolute;
+                            bottom: 20px;
+                            left: 30px;
+                            background-color: $dark-blue-100;
+                            justify-content: center;
+                            color: $white-100;
+                            text-decoration: none;
+                            text-transform: uppercase;
+                            padding: 10px 20px;
+                            font-size: 16px;
+                            font-weight: 600;
+                            border-radius: 10px;
+                            box-shadow: 0 2px 8px $dark-blue-90;
+                            transition: all .4s ease 0s;
+
+                            &:hover{
+                                transform: scale(1.1);
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+        // END ABOUT
+
+        // SECTION SKILLS
+        &.section-skills{
+            .skills-content{
+                display: grid;
+                grid-template-columns: repeat(8, 1fr);
+                grid-gap: 40px;
+                padding: 40px 0 20px 30px;
+
+                // CARD
+                .skill-card{
+                    position: relative;
+                    overflow: hidden;
+                    max-width: 120px;
+                    height: 120px;
+                    box-shadow: 0 2px 10px $dark-blue-90;
+                    color: $dark-blue-100;
+                    border-radius: 10px;
+                    text-align: center;
+
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                    .hover-effect{
+                        display: none;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        background-color: rgba(0,0,0,.8);
+                        width: 100%;
+                        height: 100%;
+                        word-wrap: break-word;
+
+                        span{
+                            position: absolute;
+                            top: 0%;
+                            transform: translate(-50%,200%);
+                            color: $white-100;
+                            font-size: 1rem;
+                            font-weight: 600;
+                        }
+                    }
+
+                    &:hover{
+                        transform: scale(1.2);
+                        transition: all .5s ease 0s;
+                        .hover-effect{
+                            display: block;
+                        }
+                    }
+                    
+                }
+            }
+        }
+        // END SKILLS
+
+        // SECTION PROJECT
+        &.section-project{
+            .project-content{
+                padding: 0 10px;
+            }
+        }
+        // END PROJECT
+
+        // SECTION_CONTACT
+        &.section-footer{ 
+            padding: 50px;
+            background-color: $dark-blue-100;
+        }
+        // END CONTACT
+    }
+}
