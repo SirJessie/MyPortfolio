@@ -2,6 +2,9 @@ import React from 'react';
 
 // Styles
 import '../styles/Section.scss';
+import '../styles/ResponsiveSection.scss';
+
+// JSON Data
 import Data from '../Data.json';
 
 function Section(){
@@ -29,8 +32,8 @@ function Section(){
                                 Software/Web Developer. Seeking for a challenging
                                 position in a reputable company to enchance my skills and gain
                                 experience. I take my Bachelor Degree in Information Technology
-                                at University of Caloocan City. I am a self learner with a passion
-                                in programming.
+                                at University of Caloocan City. I am a self learner and a
+                                passionate about developing system/website.
                             </p>
                             <a href='/resources/files/MyResume.pdf' download>Download Resume</a>
                         </div>
@@ -68,9 +71,65 @@ function Section(){
                         <div className='divider bg-cyan'></div>
                     </div>
                 </div>
+                <div className='project-content'>
+                    {
+                        Data.projects && Data.projects.map(project => {
+                            return(
+                                <div className='project-card' key={project.id}>
+                                    <div className='card-img'>
+                                        <img src={project.img} alt={project.title}/>
+                                        <div className='hover-effect'>
+                                            {
+                                                project.link &&
+                                                    <a className='icon' target="_blank" rel="noreferrer" href={project.link}>
+                                                        <i class="fa-solid fa-eye"></i>
+                                                    </a>
+                                            }
+                                            <a className='icon' target="_blank" rel="noreferrer" href={project.github}>
+                                                <i class="fa-brands fa-github"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div className='card-text'>
+                                        <div className='card-title'>{project.title}</div>
+                                        <p className='description'>
+                                            {project.description}
+                                        </p>
+                                    </div>
+                                    <div className='card-icons'>
+                                        {
+                                            project.techs && project.techs.map(tech => {
+                                                return(
+                                                    <div className='card-icon'>{tech}</div>
+                                                )
+                                            })
+                                        }
+                                        
+                                    </div>
+                                </div>
+                            )
+                        })
+                    }
+                </div>
             </section>
             <section className='section-footer'>
-                
+                <div className='footer-content'>
+                    <div className='social-links'>
+                        <a href='https://www.facebook.com/jerom.turin.5' target="_blank" rel="noreferrer" className='icon'>
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href='https://www.linkedin.com/in/turin-jessie-rom-a16124244/' target="_blank" rel="noreferrer" className='icon'>
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href='https://www.instagram.com/_jssrm' target="_blank" rel="noreferrer" className='icon'>
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                    <div className='rights-text'>
+                        <span>Copyright &copy; 2022.</span>
+                        <span>Develop by Jessie Rom Turin</span>
+                    </div>
+                </div>
             </section>
         </div>
     )

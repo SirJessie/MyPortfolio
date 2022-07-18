@@ -53,11 +53,49 @@
     "projects": [
         {
             "id":1,
-            "name":"",
-            "img":"",
+            "title":"My Portfolio",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "img":"resources/images/Portfolio.jpg",
             "link":"",
-            "github":"",
-            "tech": ["",""]
+            "github":"https://github.com/SirJessie/MyPortfolio",
+            "techs": ["React JS","SASS"]
+        },
+        {
+            "id":2,
+            "title":"REST-Q",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "img":"resources/images/REST-Q.jpg",
+            "link":"https://restq-homequarantine.epizy.com/",
+            "github":"https://github.com/SirJessie/REST-Q",
+            "techs": ["PHP","CSS","Bootsrap","JQUERY","Javascript","MYSQL"]
+        },
+        {
+            "id":3,
+            "title":"Todo App",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "img":"resources/images/TodoApp.jpg",
+            "link":"https://turin-todo-app.netlify.app/",
+            "github":"https://github.com/SirJessie/MyTodoApp",
+            "techs": ["React JS","CSS"]
+        },
+        {
+            "id":4,
+            "title":"POS and Inventory",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "img":"resources/images/POSandInventory.jpg",
+            "link":"",
+            "github":"https://github.com/SirJessie/POS-With-Inventory-System",
+            "techs": ["C#","MYSQL"]
+        },
+        {
+            "id":5,
+            "title":"Plane Seat Ticketing",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "img":"resources/images/TicketingApp.jpg",
+            "link":"",
+            "github":"https://github.com/SirJessie/Plane-Seat-Ticketing",
+            "techs": ["C#"]
         }
+        
     ]
 }

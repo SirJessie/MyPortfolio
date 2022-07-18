@@ -1,0 +1,53 @@
+@import "index";
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .header-wrapper{
+        .navbar{
+            padding: 20px 20px 10px 40px;
+
+            .nav-items{
+                display: none;
+            }
+
+            .menu-bar{
+                display: flex;
+            }
+        }
+
+        .header-banner{
+            .banner-content{
+                .greet-text{
+                    width: 120px;
+                    font-size: 18px;
+                }
+                .name-text{
+                    font-size: 28px;
+                }
+                .career-text{
+                    font-size: 33px;
+                }
+            }
+        }
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    
+}

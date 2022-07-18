@@ -1,14 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
 
 // Styles
 import '../styles/Navbar.scss';
+import '../styles/ResponsiveNavbar.scss';
 
 
 function Navbar(ScrollValue){
     const scrollToTop = () => {
         scroll.scrollToTop(); 
     };
+
+    const [toggleMenu, setToggleMenu] = useState(false);
+
 
     return(
         <div className='header-wrapper'>
@@ -51,14 +55,59 @@ function Navbar(ScrollValue){
                 </li>
                 <div className='animation'></div>
               </ul>
-              <div className='menu-bar'>
+              <div 
+                className={
+                  toggleMenu === false ? 'menu-bar' : 'menu-bar open'
+                } 
+                onClick={() => {
+                  toggleMenu === false ? setToggleMenu(true) : setToggleMenu(false)
+                }}>
                   <div className='bar'></div>
               </div>
-              <ul className='menu-bar-items'>
-                <li className='menu-bar-item'>about</li>
-                <li className='menu-bar-item'>project</li>
-                <li className='menu-bar-item'>contact</li>
-              </ul>
+                {
+                  toggleMenu === true && 
+                  <ul className='menu-bar-items'>
+                    <li className='menu-bar-item'>
+                      <Link 
+                        to='about'
+                        spy={true}
+                        smooth={true}
+                        offset={50}
+                        duration={500}
+                        onClick={() => {
+                          toggleMenu === false ? setToggleMenu(true) : setToggleMenu(false)
+                        }}
+                      >about
+                      </Link>
+                    </li>
+                    <li className='menu-bar-item'>
+                      <Link 
+                        to='skills'
+                        spy={true}
+                        smooth={true}
+                        offset={50}
+                        duration={500}
+                        onClick={() => {
+                          toggleMenu === false ? setToggleMenu(true) : setToggleMenu(false)
+                        }}
+                      >skills
+                      </Link>
+                    </li>
+                    <li className='menu-bar-item'>
+                      <Link 
+                        to='project'
+                        spy={true}
+                        smooth={true}
+                        offset={50}
+                        duration={500}
+                        onClick={() => {
+                          toggleMenu === false ? setToggleMenu(true) : setToggleMenu(false)
+                        }}
+                      >projects
+                      </Link>
+                    </li>
+                  </ul>
+                }
             </div>
             <div className='header-banner'>
               <div className='banner-content'>
