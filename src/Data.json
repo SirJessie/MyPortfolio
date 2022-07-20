@@ -1,58 +1,47 @@
 {   
     "skills":[
         {
-            "id": 1,
             "title": "HTML",
             "img" : "/resources/images/HTML Logo.png" 
         },
         {
-            "id": 2,
             "title": "CSS",
             "img" : "/resources/images/CSS Logo.jpg" 
         },{
-            "id": 3,
             "title": "SASS",
             "img" : "/resources/images/SASS Logo.png" 
         },
         {
-            "id": 4,
             "title": "JS",
             "img" : "/resources/images/JS Logo.png" 
         },
         {
-            "id": 5,
             "title": "JQUERY",
             "img" : "resources/images/JQUERY Logo.png" 
         },
         {
-            "id": 6,
             "title": "VB.Net",
             "img" : "resources/images/VB Logo.png" 
         },
         {
-            "id": 7,
             "title": "C#",
             "img" : "resources/images/CSharp Logo.png" 
         },
         {
-            "id": 8,
             "title": "JAVA",
             "img" : "resources/images/JAVA Logo.svg" 
         },
         {
-            "id": 9,
             "title": "PHP",
             "img" : "resources/images/PHP Logo.png" 
         },
         {
-            "id": 10,
             "title": "BOOTSTRAP",
             "img" : "resources/images/BOOTSTRAP Logo.png" 
         }
     ],
     "projects": [
         {
-            "id":1,
             "title":"My Portfolio",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
             "img":"resources/images/Portfolio.jpg",
@@ -61,7 +50,6 @@
             "techs": ["React JS","SASS"]
         },
         {
-            "id":2,
             "title":"REST-Q",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
             "img":"resources/images/REST-Q.jpg",
@@ -70,7 +58,6 @@
             "techs": ["PHP","CSS","Bootsrap","JQUERY","Javascript","MYSQL"]
         },
         {
-            "id":3,
             "title":"Todo App",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
             "img":"resources/images/TodoApp.jpg",
@@ -79,7 +66,6 @@
             "techs": ["React JS","CSS"]
         },
         {
-            "id":4,
             "title":"POS and Inventory",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
             "img":"resources/images/POSandInventory.jpg",
@@ -88,7 +74,6 @@
             "techs": ["C#","MYSQL"]
         },
         {
-            "id":5,
             "title":"Plane Seat Ticketing",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
             "img":"resources/images/TicketingApp.jpg",

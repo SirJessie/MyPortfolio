@@ -50,9 +50,9 @@ function Section(){
                 <div className='skills-content'>
                     {
                        
-                       Data.skills && Data.skills.map(skill => {
+                       Data.skills && Data.skills.map((skill, index) => {
                             return(
-                                <div className='skill-card' key={skill.id}>
+                                <div className='skill-card' key={index}>
                                     <img src={skill.img} alt={skill.title}/>
                                     <div className='hover-effect'>
                                         <span>{skill.title}</span>
@@ -73,20 +73,20 @@ function Section(){
                 </div>
                 <div className='project-content'>
                     {
-                        Data.projects && Data.projects.map(project => {
+                        Data.projects && Data.projects.map((project, index) => {
                             return(
-                                <div className='project-card' key={project.id}>
+                                <div className='project-card' key={index}>
                                     <div className='card-img'>
                                         <img src={project.img} alt={project.title}/>
                                         <div className='hover-effect'>
                                             {
                                                 project.link &&
                                                     <a className='icon' target="_blank" rel="noreferrer" href={project.link}>
-                                                        <i class="fa-solid fa-eye"></i>
+                                                        <i className="fa-solid fa-eye"></i>
                                                     </a>
                                             }
                                             <a className='icon' target="_blank" rel="noreferrer" href={project.github}>
-                                                <i class="fa-brands fa-github"></i>
+                                                <i className="fa-brands fa-github"></i>
                                             </a>
                                         </div>
                                     </div>
@@ -98,9 +98,9 @@ function Section(){
                                     </div>
                                     <div className='card-icons'>
                                         {
-                                            project.techs && project.techs.map(tech => {
+                                            project.techs && project.techs.map((tech, index) => {
                                                 return(
-                                                    <div className='card-icon'>{tech}</div>
+                                                    <div className='card-icon' key={index}>{tech}</div>
                                                 )
                                             })
                                         }
@@ -116,13 +116,13 @@ function Section(){
                 <div className='footer-content'>
                     <div className='social-links'>
                         <a href='https://www.facebook.com/jerom.turin.5' target="_blank" rel="noreferrer" className='icon'>
-                            <i class="fa-brands fa-facebook-f"></i>
+                            <i className="fa-brands fa-facebook-f"></i>
                         </a>
                         <a href='https://www.linkedin.com/in/turin-jessie-rom-a16124244/' target="_blank" rel="noreferrer" className='icon'>
-                            <i class="fa-brands fa-linkedin-in"></i>
+                            <i className="fa-brands fa-linkedin-in"></i>
                         </a>
                         <a href='https://www.instagram.com/_jssrm' target="_blank" rel="noreferrer" className='icon'>
-                            <i class="fa-brands fa-instagram"></i>
+                            <i className="fa-brands fa-instagram"></i>
                         </a>
                     </div>
                     <div className='rights-text'>

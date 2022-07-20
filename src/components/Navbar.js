@@ -25,9 +25,9 @@ function Navbar(){
         <div className='header-wrapper'>
             <div className='navbar'>
               <div className='logo-name' onClick={scrollToTop}>
-                <i class="fa-solid fa-less-than"></i>
+                <i className="fa-solid fa-less-than"></i>
                 JRT /
-                <i class="fa-solid fa-greater-than"></i>
+                <i className="fa-solid fa-greater-than"></i>
               </div>
               <ul className='nav-items'>
                 <li class='nav-item'>
