@@ -43,7 +43,7 @@
                     padding: 30px 10px 20px 10x;
 
                     .project-card{
-                        width: 300px;
+                        width: 320px;
 
                         .card-icons{
                             grid-template-columns: repeat(3, 1fr);
@@ -56,59 +56,8 @@
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 600px) {
-    .section-container{
-        section{
-            padding: 60px 0px 30px 0px;
-
-            &.section-about{
-                .personal-wrapper{
-                    padding: 0px 30px;
-
-                    .personal-card{
-                        display: block;
-                        
-
-                        .card-left{
-                            width: 100%;
-                            align-items: center;
-                        }
-
-                        .card-right{
-                            padding-top: 0px;
-                            a{
-                                bottom: -20px;
-                            }
-                        }
-                    }
-
-                }
-            }
-
-            &.section-skills{
-                .skills-content{
-                    grid-template-columns: repeat(3, 1fr);
-                }
-            }
-
-            &.section-project{
-                .project-content{
-                    grid-template-columns: repeat(1, 1fr);
-                    grid-gap: 40px;
-                    padding: 30px 10px 20px 45px;
-
-                    .project-card{
-                        width: 400px;
-                        
-
-                        .card-icons{
-                            grid-template-columns: repeat(4, 1fr);
-                        }
-                    }
-                }
-            }
-        }
-    }
+@media only screen and (min-width: 600px) {
+    
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
