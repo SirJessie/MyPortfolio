@@ -6,12 +6,19 @@ import '../styles/Navbar.scss';
 import '../styles/ResponsiveNavbar.scss';
 
 
-function Navbar(ScrollValue){
+function Navbar(){
     const scrollToTop = () => {
         scroll.scrollToTop(); 
     };
 
     const [toggleMenu, setToggleMenu] = useState(false);
+
+    const OpenMenu = () => {
+      setToggleMenu(true);
+    }
+    const CloseMenu = () =>{
+      setToggleMenu(false);
+    }
 
 
     return(
@@ -60,7 +67,7 @@ function Navbar(ScrollValue){
                   toggleMenu === false ? 'menu-bar' : 'menu-bar open'
                 } 
                 onClick={() => {
-                  toggleMenu === false ? setToggleMenu(true) : setToggleMenu(false)
+                  toggleMenu === false ? OpenMenu() : CloseMenu()
                 }}>
                   <div className='bar'></div>
               </div>
@@ -75,7 +82,7 @@ function Navbar(ScrollValue){
                         offset={50}
                         duration={500}
                         onClick={() => {
-                          toggleMenu === false ? setToggleMenu(true) : setToggleMenu(false)
+                          toggleMenu === false ? OpenMenu() : CloseMenu()
                         }}
                       >about
                       </Link>
@@ -88,7 +95,7 @@ function Navbar(ScrollValue){
                         offset={50}
                         duration={500}
                         onClick={() => {
-                          toggleMenu === false ? setToggleMenu(true) : setToggleMenu(false)
+                          toggleMenu === false ? OpenMenu() : CloseMenu()
                         }}
                       >skills
                       </Link>
@@ -101,7 +108,7 @@ function Navbar(ScrollValue){
                         offset={50}
                         duration={500}
                         onClick={() => {
-                          toggleMenu === false ? setToggleMenu(true) : setToggleMenu(false)
+                          toggleMenu === false ? OpenMenu() : CloseMenu()
                         }}
                       >projects
                       </Link>

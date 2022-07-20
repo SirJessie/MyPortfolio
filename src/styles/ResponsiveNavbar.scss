@@ -32,14 +32,21 @@
     }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-    
-}
-
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-    
+@media only screen and (max-width: 768px) {
+    .header-wrapper{
+        .navbar{
+            padding: 20px 20px 10px 40px;
+
+            .nav-items{
+                display: none;
+            }
+
+            .menu-bar{
+                display: flex;
+            }
+        }
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */

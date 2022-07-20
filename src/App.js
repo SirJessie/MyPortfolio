@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
 // Components
 import Navbar from './components/Navbar.js';
@@ -8,23 +8,10 @@ import Section from './components/Section.js';
 import './styles/App.scss';
 
 function App(){
-    const [scrollPosition, setScrollPosition] = useState(0);
-    const handleScroll = () => {
-      const position = window.pageYOffset;
-      setScrollPosition(position);
-    };
-
-    useEffect(() => {
-      window.addEventListener("scroll", handleScroll);
-
-      return () => {
-        window.removeEventListener("scroll", handleScroll);
-      };
-    }, []);
 
     return(
         <div className='app-wrapper'>
-          <Navbar ScrollValue={scrollPosition}/>
+          <Navbar />
           <Section />
         </div>
     )

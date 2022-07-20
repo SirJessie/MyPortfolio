@@ -4,4 +4,8 @@
 // APP CONTAINER
 .app-wrapper{
     width: 100%;
+
+    &.open{
+        filter: blur(10px);
+    }
 }
