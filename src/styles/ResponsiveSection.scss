@@ -19,6 +19,7 @@
                         }
 
                         .card-right{
+                            padding: 30px;
                             padding-top: 0px;
                             a{
                                 bottom: -60px;
@@ -33,7 +34,7 @@
                 .skills-content{
                     grid-template-columns: repeat(2, 1fr);
                     grid-gap: 40px;
-                    padding: 40px 0 20px 40px;
+                    padding: 40px 0 20px 30px;
                 }
             }
 
