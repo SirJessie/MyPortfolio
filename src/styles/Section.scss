@@ -7,7 +7,6 @@
     min-height: 100vh;
 
     section{
-        padding: 40px;
 
         .section-title{
             font-size: 30px;
@@ -36,11 +35,10 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                padding: 20px;
 
                 // CARD
                 .personal-card{
-                    display: flex;
+                    // display: flex;
 
                     // CARD LEFT
                     .card-left{
@@ -60,15 +58,12 @@
                     // CARD RIGHT
                     .card-right{
                         width: 400px;
-                        padding: 30px;
                         text-align: justify;
                         position: relative;
 
                         // DOWNLOAD BUTTOn
                         a{
                             position: absolute;
-                            bottom: 20px;
-                            left: 30px;
                             background-color: $dark-blue-100;
                             justify-content: center;
                             color: $white-100;
@@ -96,10 +91,6 @@
         &.section-skills{
             .skills-content{
                 display: grid;
-                grid-template-columns: repeat(8, 1fr);
-                grid-gap: 40px;
-                padding: 40px 0 20px 30px;
-
                 // CARD
                 .skill-card{
                     position: relative;
@@ -154,11 +145,8 @@
         &.section-project{
             .project-content{
                 display: grid;
-                grid-gap: 20px;
-                grid-template-columns: repeat(3, 1fr);
                 overflow-y: auto;
                 max-height: 600px;
-                padding: 30px 0 20px 20px;
                 margin-top: 20px;
 
                 &::-webkit-scrollbar-thumb{
@@ -171,7 +159,6 @@
                 
                 .project-card{
                     box-shadow: 0 2px 10px $dark-blue-100;
-                    width: 380px;
                     border-radius: 5px;
                     overflow: hidden;
 
@@ -238,7 +225,6 @@
 
                     .card-icons{
                         display: grid;
-                        grid-template-columns: repeat(5,auto);
                         grid-gap: 5px;
                         padding: 10px;
                         text-align: center;

@@ -32,8 +32,8 @@ function Section(){
                                 Software/Web Developer. Seeking for a challenging
                                 position in a reputable company to enchance my skills and gain
                                 experience. I take my Bachelor Degree in Information Technology
-                                at University of Caloocan City. I am a self learner and a
-                                passionate about developing system/website.
+                                at University of Caloocan City. I am a self learner with a
+                                passion in developing system/website.
                             </p>
                             <a href='/resources/files/MyResume.pdf' download>Download Resume</a>
                         </div>
