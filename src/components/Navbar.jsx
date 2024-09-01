@@ -139,7 +139,7 @@ function Navbar(){
             <div className='banner-content'>
               <div className="header-image">
                 <div className="image">
-                  <img src={require("../../public/resources/images/Image2.png")} alt="hello"></img>
+                  <img src='' alt="hello"></img>
                 </div>
               </div>
               <div className="heading">
