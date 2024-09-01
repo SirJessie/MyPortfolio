@@ -1,18 +1,16 @@
 import React from 'react';
 
 // Components
-import Navbar from './components/Navbar.js';
-import Section from './components/Section.js';
+import Navbar from './components/Navbar.jsx';
 
 // Styles
-import './styles/App.scss';
+import './styles/index.scss';
 
 function App(){
 
     return(
         <div className='app-wrapper'>
           <Navbar />
-          <Section />
         </div>
     )
 }

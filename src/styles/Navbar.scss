@@ -3,24 +3,21 @@
 
 //Header Container
 .header-wrapper{
-    background-color: $dark-blue-100;
     color: $white-100;
-    width: 100%;
-    height: 100vh;
-    padding: 0 0 0px 0;
+    padding: 0;
     margin: 0;
+    overflow: hidden;
+    height: 100%;
+    transition: all 1s ease-in-out;
+    display: flex;
     
     // NAVIGATION BAR CONTAINER
     .navbar{
-        position: fixed;
-        top: 0;
-        left: 0;
         display: flex;
         justify-content: space-between;
         width: 100%;
-        background-color: $dark-blue-90;
-        z-index: 3;
-        
+        background-color: transparent;
+        z-index: 99;
 
         // LOGO
         .logo-name{
@@ -86,7 +83,7 @@
                 bottom: 0;
                 left: 0px;
                 z-index: 0;
-                background-color: $cyan-100;
+                background-color: $blueish;
                 transition: all .5s ease 0s;
                 transform: skew(-20deg);
             }
@@ -155,7 +152,7 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            background-color: $dark-blue-90;
+            background-color: $dark-blue;
             width: 100%;
             height: 100vh;
             text-decoration: none;
@@ -173,7 +170,7 @@
 
                 &:hover{
                     background-color: $white-100;
-                    color: $dark-blue-100;
+                    color: $base-blue;
                     transition: all .5s ease 0s;
                 }
             }
@@ -182,47 +179,108 @@
 
     // HEADER BANNER
     .header-banner{
+        position: sticky;
+        height: auto;
+        width: 70%;
+        background: linear-gradient(to right, $base-blue, 90%, $dark-blue);
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100%;
-        width: 100%;
         
         // BANNER CONTENT
         .banner-content{
-            overflow: hidden;
-            padding: 30px 0 0 0;
+            display: flex;
+            width: auto;
+            height: auto;
+            z-index: 3;
+            margin: 0 auto;
 
-            // GREET TEXT
-            .greet-text{
-                width: 150px;
-                padding: 3px 10px;
-                background-color: $cyan-100;
-                color: $dark-blue-100;
-                font-size: 25px;
-                font-weight: 500;
-                border-radius: 5px;
-                text-align: center;
-                animation: Bounce 1s 0s ease;
+            //IMAGE CONTENT
+            .header-image{
+                padding-block: 30px;
+
+                .image{
+                    width: 250px;
+                    height: 600px;
+                    //border-radius: 50%;
+                    overflow: hidden;
+                    // background: url(../../public/resources/images/Image2.png) no-repeat;
+                    // background-size: cover;
+                    filter: grayscale(50%) brightness(50%);
+
+                    
+                    //box-shadow: 0px -2px 5px 2px rgba($white-100, .75);
+                
+                    // &::before{
+                    //     position:absolute;
+                    //     content: '';
+                    //     width: 100%;
+                    //     height: 100%;
+                    //     background-color: $blueish;
+                    //     animation: waveAnimate 3s ease-in-out infinite;
+                    // }
+
+                    // &::after{
+                    //     position: absolute;
+                    //     content: '';
+                    //     border-radius: 50%;
+                    //     inset: 10px;
+                    //     background: $white-100 url(../../public/resources/images/Myself.png) no-repeat;
+                    //     background-size: calc(210px);
+                    //     background-position: top;
+                        
+                    // }
+
+                    // @keyframes waveAnimate {
+                    //     0%, 100%{
+                    //         clip-path: polygon(0% 45%, 15% 44%, 32% 50%,
+		            //                            54% 60%, 70% 61%, 84% 59%,
+                    //                            100% 52%, 100% 100%, 0% 100%);
+                    //     }
+                    //     50%{
+                    //         clip-path: polygon(0% 60%, 16% 65%, 34% 66%,
+		            //                            51% 62%, 67% 50%, 84% 45%,
+                    //                            100% 46%, 100% 100%, 0% 100%);
+                    //     }
+                    // }
+                }
             }
 
-            // NAME TEXT
-            .name-text{
-                position: relative;
-                margin-top: 10px;
-                font-size: 35px;
-                font-weight: 600;
-                animation: Bounce 1s .1s ease;
+            .heading{
+                padding: 20px;
+
+                // NAME TEXT
+                .name-text{
+                    font-size: 40px;
+                    font-weight: 700;
+                }
+
+                // ABOUT TEXT
+                .about-text{
+                    font-size: 15px;
+                    width: 500px;
+                    overflow: hidden;
+                    margin: 15px 0;
+                }
+
+                // CAREER TEXT
+                .career-text{
+                    font-size: 15px;
+                    font-weight: 600;
+                    color: $blueish;
+                }
+                            
             }
 
-            // CAREER TEXT
-            .career-text{
-                position: relative;
-                text-align: center;
-                font-size: 40px;
-                font-weight: 700;
-                animation: SlideRight 1.5s 0s ease;
-            }
+            // &.scrolled-down{
+            //     transform: translateY(15%);
+            // }
         }
+    }
+
+    .main-content{
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+        width: 40%;
     }
 }

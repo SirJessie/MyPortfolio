@@ -4,9 +4,10 @@
 // Variables
 
     //DARK BLUE 
-    $dark-blue-100: #023047;
-    $dark-blue-90: #023047e6;
-    $dark-blue-80: #023047cc;
+    $base-blue: #01202F;
+    $dark-blue: #023047;
+    $blue-gray: #567584;
+    $blueish: #6295FF;
 
     // WHITE
     $white-100: #ffffff;
@@ -14,6 +15,9 @@
 
     // CYAN
     $cyan-100: #00ffff;
+
+    //REDISH
+    $red-100: #ff5656;
 
     // FACEBOOK
     $facebook-color: #4267B2;
@@ -31,8 +35,13 @@ html, body{
     padding: 0;
     margin: 0;
     font-family: 'Poppins';
-    color: $dark-blue-100;
+    color: $base-blue;
     overflow-x: hidden;
+}
+// APP CONTAINER
+.app-wrapper{
+    width: 100%;
+    height: 100vh;
 }
 input,textarea{
     padding: 5px;
@@ -54,25 +63,21 @@ input,textarea{
 }
 
 ::-webkit-scrollbar{
-    width: 10px;
+    width: 0.1px;
 }
-::-webkit-scrollbar-thumb{
-    background-color: $dark-blue-100;
-    border: solid 1px $white-100;
-    border-radius: 10px;
-}
-.divider{
-    height: 3px;
-    animation: AnimateDivider 1s 0s linear;
-}
+
+
 .bg-dark-blue{
-    background-color: $dark-blue-100;
+    background-color: $base-blue;
 }
 .bg-white{
     background-color: $white-100;
 }
 .bg-cyan{
     background-color: $cyan-100;
+}
+.bg-red{
+    background-color: $red-100;
 }
 
 /* ANIMATIONS */
@@ -102,6 +107,6 @@ input,textarea{
 }
 @keyframes Bounce{
     0%   { transform: translateY(0); }
-        50%  { transform: translateY(-30px); }
-        100% { transform: translateY(0); }
+    50%  { transform: translateY(-30px); }
+    100% { transform: translateY(0); }
 }
