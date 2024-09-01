@@ -8,7 +8,6 @@ import Section from './Section.jsx';
 import '../styles/Navbar.scss';
 import '../styles/ResponsiveNavbar.scss';
 
-
 function Navbar(){
   //#region Variables
   //const logoName = "{ Jessie }";
@@ -139,7 +138,7 @@ function Navbar(){
             <div className='banner-content'>
               <div className="header-image">
                 <div className="image">
-                  <img src='' alt="hello"></img>
+                  <div className="round-image"></div>
                 </div>
               </div>
               <div className="heading">
